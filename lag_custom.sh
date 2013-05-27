@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# run this file from user root, i.e.: source /etc/profile.d/lag_custom.sh
+# Run this file from user root, i.e.: ~/ source /etc/profile.d/lag_custom.sh
+# Create link to 'custom.sh' 
 
 ## USER BASE
 USER="/Users/greenla"
