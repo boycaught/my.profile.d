@@ -141,24 +141,18 @@ alias customize='source /etc/profile.d/lag_custom.sh'
 
 ### FF X => FIND FILE NAMED X
 alias ff="find . -name \!:1 -print"     
-
 ### LINE 5 FILE => SHOW LINE 5 OF FILE
 alias line="sed -n '\''\!:1 p'\'' \!:2" 
-
 ### HISTOGRAM WORDS
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
-alias foox='clear'
-alias barx='clear'
-
-## Shit from Paul Irish (Google webdev guru)
-#
+### Shit from Paul Irish (Google webdev guru, who got it from someone else...LOLz!)
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 #for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 #for file in ~/dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
-#
-for file in ~/dotfiles/.{bash_prompt,gitconfig,gitignore}; do
+
+for file in ~/dotfiles/.{bash_prompt,aliases}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
@@ -170,9 +164,8 @@ unset file
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+# some additional edits based on the Messiah box.
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
-
 
 #EOF
