@@ -1,18 +1,26 @@
 #!/bin/sh
 
-## BASE PATH
-MY_HOME="/Users/greenla/usr/local"
+## BASE PATHS
+USER="/Users/greenla"
+
+MY_HOME="$USER/usr/local"
+MY_DOCS="$USER/Documents"
+MY_APPS="$USER/Applications"
 
 ## JAVA PATHS
 JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
 JDK_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
+JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 
 ## CUSTOM PATHS
+ACTIVEMQ_HOME="$MY_HOME/activemq"
 ADOBE_AIR_SDK="$MY_HOME/adobeairsdk"
+ANDROID_HOME="$MY_HOME/android-sdk-macosx"
 ANT_HOME="$MY_HOME/ant"
+AWS_CREDENTIALS_FILE="$MY_HOME/aws/aws-credentials"
 BREW_HOME="/usr/local"
 CATALINA_HOME="$MY_HOME/catalina"
-CF_HOME="/Users/greenla/Applications/ColdFusion10"
+CF_HOME="$USER/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
 EC2_CERT="$EC2_HOME/x509_certificate.pem"
 EC2_HOME="$MY_HOME/ec2"
@@ -22,7 +30,7 @@ FLEX_SDK="$MY_HOME/flexsdk"
 GRADLE_HOME="$MY_HOME/gradle"
 GRAILS_HOME="$MY_HOME/grails"
 GROOVY_HOME="$MY_HOME/groovy"
-JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
+HEROKU_HOME="/usr/local/heroku/"
 JETTY_HOME="$MY_HOME/jetty"
 JRUBY_HOME="$MY_HOME/jruby"
 JYTHON_HOME="$MY_HOME/jython"
@@ -32,17 +40,18 @@ MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.3-x86_64"
 NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.1"
 PYTHON_HOME="$BREW_HOME/Cellar/python/2.7.3"
 RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p392"
-SUBLIMETEXT="/Users/greenla/Applications/Sublime Text 2.app/Contents/SharedSupport"
+SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
 WEBMIN_HOME="$MY_HOME/webmin"
+VISUALVM="$MY_HOME/visualvm"
 YUICOMPRESSOR="$MY_HOME/yuicompressor-2.4.7/compress.jar"
 BOGUS="A whole lot of who?"
 
 CLASSPATH="$JYTHON_HOME/jython.jar:\
-Users/greenla/Applications/ColdFusion10/cfusion/lib/customlib/h2.jar:\
-Users/greenla/Applications/ColdFusion10/cfusion/lib/customlib/hsqldb.jar:\
-Users/greenla/Applications/ColdFusion10/cfusion/lib/customlib/jtds-1.2.5.jar:\
-Users/greenla/Applications/ColdFusion10/cfusion/lib/customlib/mongo-2.7.0.jar:\
-Users/greenla/Applications/ColdFusion10/cfusion/lib/customlib/sqlitejdbc-v037-nested.jar:\
+$CF_HOME/lib/customlib/h2.jar:\
+$CF_HOME/lib/customlib/hsqldb.jar:\
+$CF_HOME/lib/customlib/jtds-1.2.5.jar:\
+$CF_HOME/lib/customlib/mongo-2.7.0.jar:\
+$CF_HOME/lib/customlib/sqlitejdbc-v037-nested.jar:\
 $CLASSPATH"
 
 JYTHONPATH="$JYTHON_HOME:$JYTHON_HOME/bin:$JYTHON_HOME/Lib"
@@ -59,7 +68,6 @@ $ADOBE_AIR_SDK/bin:\
 $ANT_HOME/bin:\
 $BREW_HOME/bin:\
 $BREW_HOME/share/python:\
-$HOME_BREW/opt/ruby193/bin:\
 $CATALINA_HOME/bin:\
 $CF_HOME/bin:\
 $EC2_HOME/bin:\
@@ -67,6 +75,7 @@ $FLEX_SDK/bin:\
 $GRADLE_HOME/bin:\
 $GRAILS_HOME/bin:\
 $GROOVY_HOME/bin:\
+$HEROKU_HOME/bin:\
 $JETTY_HOME/bin:\
 $JRUBY_HOME/bin:\
 $M2_HOME\bin:\
@@ -78,7 +87,9 @@ $SUBLIMETEXT/bin:\
 $WEBMIN_HOME:\
 $PATH"
 
+export ACTIVEMQ_HOME
 export ADOBE_AIR_SDK
+export ANDROID_HOME
 export ANT_HOME
 export BREW_HOME
 export CATALINA_HOME
@@ -90,6 +101,7 @@ export FLEX_SDK
 export GRADLE_HOME
 export GRAILS_HOME
 export GROOVY_HOME
+export HEROKU_HOME
 export JAVA_HOME
 export JAVA_OPTS
 export JDK_HOME
@@ -109,7 +121,7 @@ export WEBMIN_HOME
 export YUICOMPRESSOR
 export BOGUS
 
-export CC=gcc-4.2
+export CC="gcc-4.2"
 
 export PATH
 
@@ -122,13 +134,20 @@ alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
 
-## Shit from Paul Irish (Google webdev guru)
-##
+## FF X => FIND FILE NAMED X
+alias ff="find . -name \!:1 -print"     
+
+## LINE 5 FILE => SHOW LINE 5 OF FILE
+alias line="sed -n '\''\!:1 p'\'' \!:2" 
+
+## HISTOGRAM WORDS
+alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
+
+### Shit from Paul Irish (Google webdev guru, who got it from someone else...LOLz!)
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 # for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 # for file in ~/dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
-##
 for file in ~/dotfiles/.{bash_prompt,aliases}; do
 	[ -r "$file" ] && source "$file"
 done
@@ -147,9 +166,9 @@ shopt -s nocaseglob
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+# some additional edits based on the Messiah box.
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
 
 
 #EOF
