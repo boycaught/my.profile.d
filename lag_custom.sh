@@ -148,7 +148,7 @@ alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n |
 # ~/.extra can be used for settings you don’t want to commit
 # for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 # for file in ~/dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
-for file in ~/dotfiles/.{bash_prompt,aliases}; do
+for file in ~/dotfiles/.{bash_prompt,aliases,extras}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
