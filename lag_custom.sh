@@ -37,6 +37,7 @@ JYTHON_HOME="$MY_HOME/jython"
 M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
 MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.4-x86_64"
+MYSQL_HOME="$BREW_HOME/mysql"
 NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.1"
 PYTHON_HOME="$BREW_HOME/Cellar/python/2.7.3"
 RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p392"
@@ -80,6 +81,7 @@ $JETTY_HOME/bin:\
 $JRUBY_HOME/bin:\
 $M2_HOME\bin:\
 $MONGODB_HOME/bin:\
+$MYSQL_HOME/bin:\
 $MY_HOME/bin:\
 $NGINX_HOME/sbin:\
 $RUBY_HOME/bin:\
@@ -112,6 +114,7 @@ export JYTHONPATH
 export M2_HOME
 export MAVEN_OPTS
 export MONGODB_HOME
+export MYSQL_HOME
 export NGINX_HOME
 export PYTHON_HOME
 export PYTHONPATH
