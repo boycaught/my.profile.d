@@ -22,6 +22,7 @@ BREW_HOME="/usr/local"
 CATALINA_HOME="$MY_HOME/catalina"
 CF_HOME="$USER/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
+COREUTILS="$BREW_HOME/opt/coreutils/libexec/gnubin"
 EC2_CERT="$EC2_HOME/x509_certificate.pem"
 EC2_HOME="$MY_HOME/ec2"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
@@ -71,6 +72,7 @@ $BREW_HOME/bin:\
 $BREW_HOME/share/python:\
 $CATALINA_HOME/bin:\
 $CF_HOME/bin:\
+$COREUTILS:\
 $EC2_HOME/bin:\
 $FLEX_SDK/bin:\
 $GRADLE_HOME/bin:\
