@@ -1,11 +1,11 @@
 #!/bin/sh
 
 ## BASE PATHS
-USER="/Users/greenla"
+HOME="/Users/greenla"
 
-MY_HOME="$USER/usr/local"
-MY_DOCS="$USER/Documents"
-MY_APPS="$USER/Applications"
+MY_HOME="$HOME/usr/local"
+MY_DOCS="$HOME/Documents"
+MY_APPS="$HOME/Applications"
 
 ## JAVA PATHS
 JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
@@ -20,7 +20,7 @@ ANT_HOME="$MY_HOME/ant"
 AWS_CREDENTIALS_FILE="$MY_HOME/aws/aws-credentials"
 BREW_HOME="/usr/local"
 CATALINA_HOME="$MY_HOME/catalina"
-CF_HOME="$USER/Applications/ColdFusion10/cfusion"
+CF_HOME="$HOME/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
 COREUTILS="$BREW_HOME/opt/coreutils/libexec/gnubin"
 EC2_CERT="$EC2_HOME/x509_certificate.pem"
@@ -28,6 +28,8 @@ EC2_HOME="$MY_HOME/ec2"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
 EC2_URL="http://ec2.amazonaws.com"
 FLEX_SDK="$MY_HOME/flexsdk"
+GOROOT="$BREW_HOME/Cellar/go/1.1.2"
+GOPATH="$HOME/go"
 GRADLE_HOME="$MY_HOME/gradle"
 GRAILS_HOME="$MY_HOME/grails"
 GROOVY_HOME="$MY_HOME/groovy"
@@ -75,6 +77,8 @@ $CF_HOME/bin:\
 $COREUTILS:\
 $EC2_HOME/bin:\
 $FLEX_SDK/bin:\
+$GOROOT/bin:\
+$GOPATH/bin:\
 $GRADLE_HOME/bin:\
 $GRAILS_HOME/bin:\
 $GROOVY_HOME/bin:\
@@ -102,6 +106,8 @@ export CF_ROOT
 export CLASSPATH
 export EC2_HOME
 export FLEX_SDK
+export GOROOT
+export GOPATH
 export GRADLE_HOME
 export GRAILS_HOME
 export GROOVY_HOME
