@@ -154,6 +154,9 @@ alias line="sed -n '\''\!:1 p'\'' \!:2"
 ## HISTOGRAM WORDS
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
+## VEEWEE (Vagrant Box builder)
+alias veewee="bundle exec veewee"
+
 ### Shit from Paul Irish (Google webdev guru, who got it from someone else...LOLz!)
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
