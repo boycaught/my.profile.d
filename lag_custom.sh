@@ -42,6 +42,7 @@ MAVEN_OPTS="-Xms256m -Xmx512m"
 MYSQL_HOME="$BREW_HOME/mysql"
 MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.6"
 NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.2"
+PHANTOMJS="$HOME/.local/bin/phantomjs"
 PYTHON_HOME="$BREW_HOME/Cellar/python/2.7.3"
 RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p392"
 SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
@@ -90,6 +91,7 @@ $MONGODB_HOME/bin:\
 $MYSQL_HOME/bin:\
 $MY_HOME/bin:\
 $NGINX_HOME/sbin:\
+$PHANTOMJS:\
 $RUBY_HOME/bin:\
 $SUBLIMETEXT/bin:\
 $WEBMIN_HOME:\
@@ -124,6 +126,7 @@ export MAVEN_OPTS
 export MONGODB_HOME
 export MYSQL_HOME
 export NGINX_HOME
+export PHANTOMJS
 export PYTHON_HOME
 export PYTHONPATH
 export RUBY_HOME
