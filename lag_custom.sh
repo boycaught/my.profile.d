@@ -145,6 +145,9 @@ alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
 
+## VEEWEE Virtual Machine Builder
+alias veewee='bundle exec veewee'
+
 ## FF X => FIND FILE NAMED X
 alias ff="find . -name \!:1 -print"     
 
