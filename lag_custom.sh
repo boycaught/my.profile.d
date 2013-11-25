@@ -39,11 +39,11 @@ JRUBY_HOME="$MY_HOME/jruby"
 JYTHON_HOME="$MY_HOME/jython"
 M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
-MYSQL_HOME="$BREW_HOME/mysql"
-MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.6"
-NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.2"
+MYSQL_HOME="$BREW_HOME/Cellar/mysql"
+MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.7"
+NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.3"
 PHANTOMJS="$HOME/.local/bin/phantomjs"
-PYTHON_HOME="$BREW_HOME/Cellar/python/2.7.3"
+PYTHON_HOME="/System/Library/Frameworks/Python.framework/Versions/Current"
 RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p392"
 SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
 WEBMIN_HOME="$MY_HOME/webmin"
@@ -61,7 +61,7 @@ $CLASSPATH"
 
 JYTHONPATH="$JYTHON_HOME:$JYTHON_HOME/bin:$JYTHON_HOME/Lib"
 
-PYTHONPATH="$PYTHON_HOME/bin:$PYTHON_HOME/share"
+PYTHONPATH="$PYTHON_HOME/bin"
 
 PATH="$HOME/.local/bin:\
 /usr/local/bin:\
