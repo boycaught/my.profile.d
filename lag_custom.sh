@@ -69,6 +69,7 @@ PATH="$HOME/.local/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
 /opt/subversion/bin:\
+/usr/local/opt/coreutils/libexec/gnubin:\
 $ADOBE_AIR_SDK/bin:\
 $ANT_HOME/bin:\
 $BREW_HOME/bin:\
