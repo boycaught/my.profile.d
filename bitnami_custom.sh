@@ -100,7 +100,7 @@ export PATH
 ## MY ALIASES
 alias cl='clear'
 alias ll='ls -lag | more'
-alias px='ps Aue'
+alias px='ps -aux | more'
 alias dx='du -k | more'
 alias py='python manage.py'
 alias customize='source /etc/profile.d/bitnami_custom.sh'
