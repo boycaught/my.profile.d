@@ -28,23 +28,23 @@ EC2_HOME="$MY_HOME/ec2"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
 EC2_URL="http://ec2.amazonaws.com"
 FLEX_SDK="$MY_HOME/flexsdk"
-GOROOT="$BREW_HOME/Cellar/go/1.1.2"
+GOROOT="$BREW_HOME/Cellar/go/1.2"
 GOPATH="$HOME/go"
 GRADLE_HOME="$MY_HOME/gradle"
 GRAILS_HOME="$MY_HOME/grails"
 GROOVY_HOME="$MY_HOME/groovy"
 HEROKU_HOME="/usr/local/heroku/"
 JETTY_HOME="$MY_HOME/jetty"
-JRUBY_HOME="$MY_HOME/jruby"
+JRUBY_HOME="$BREW_HOME/Cellar/jruby/1.7.8"
 JYTHON_HOME="$MY_HOME/jython"
 M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
 MYSQL_HOME="$BREW_HOME/Cellar/mysql"
-MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.7"
-NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.3"
+MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.4.8"
+NGINX_HOME="$BREW_HOME/Cellar/nginx/1.4.4"
 PHANTOMJS="$HOME/.local/bin/phantomjs"
 PYTHON_HOME="/System/Library/Frameworks/Python.framework/Versions/Current"
-RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p392"
+RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p484"
 SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
 WEBMIN_HOME="$MY_HOME/webmin"
 VISUALVM="$MY_HOME/visualvm"
@@ -69,6 +69,7 @@ PATH="$HOME/.local/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
 /opt/subversion/bin:\
+/usr/local/opt/coreutils/libexec/gnubin:\
 $ADOBE_AIR_SDK/bin:\
 $ANT_HOME/bin:\
 $BREW_HOME/bin:\
