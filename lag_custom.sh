@@ -8,8 +8,10 @@ MY_DOCS="$HOME/Documents"
 MY_APPS="$HOME/Applications"
 
 ## JAVA PATHS
-JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
-JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+#JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
+#JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 #JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
 #JDK_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
@@ -66,7 +68,8 @@ JYTHONPATH="$JYTHON_HOME:$JYTHON_HOME/bin:$JYTHON_HOME/Lib"
 
 PYTHONPATH="$PYTHON_HOME/bin"
 
-PATH="$HOME/.local/bin:\
+PATH="~/.local/bin:\
+~/.meteor:\
 /usr/local/bin:\
 /usr/bin:\
 /usr/local/sbin:\
