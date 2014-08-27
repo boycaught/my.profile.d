@@ -8,8 +8,10 @@ MY_DOCS="$HOME/Documents"
 MY_APPS="$HOME/Applications"
 
 ## JAVA PATHS
-JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
-JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+#JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
+#JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 #JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
 #JDK_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
@@ -43,7 +45,7 @@ M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
 MYSQL_HOME="$BREW_HOME/Cellar/mysql"
 MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.6.3"
-NGINX_HOME="$BREW_HOME/Cellar/nginx/1.6.0_1"
+NGINX_HOME="$BREW_HOME/Cellar/nginx/1.6.1"
 PHANTOMJS="$HOME/.local/bin/phantomjs"
 PYTHON_HOME="/System/Library/Frameworks/Python.framework/Versions/Current"
 RUBY_HOME="$HOME/.rvm/rubies/ruby-1.9.2-p320/bin/ruby"
@@ -66,7 +68,8 @@ JYTHONPATH="$JYTHON_HOME:$JYTHON_HOME/bin:$JYTHON_HOME/Lib"
 
 PYTHONPATH="$PYTHON_HOME/bin"
 
-PATH="$HOME/.local/bin:\
+PATH="~/.local/bin:\
+~/.meteor:\
 /usr/local/bin:\
 /usr/bin:\
 /usr/local/sbin:\
@@ -164,9 +167,6 @@ alias line="sed -n '\''\!:1 p'\'' \!:2"
 ## HISTOGRAM WORDS
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
-## VEEWEE (Vagrant Box builder)
-alias veewee="bundle exec veewee"
-
 ### Shit from Paul Irish (Google webdev guru, who got it from someone else...LOLz!)
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
@@ -194,5 +194,5 @@ export LANG="en_US"
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-#Custom startup_scripts for Mac OS X systems - 7/14/2014
+#Custom startup_scripts for Mac OS X systems - 8/27/2014
 #EOF

@@ -128,4 +128,5 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 
+#Custom startup_scripts for UNIX-based cloud systems - 7/14/2014
 #EOF
