@@ -194,5 +194,5 @@ export LANG="en_US"
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-
+#Custom startup_scripts for Mac OS X systems - 7/14/2014
 #EOF
