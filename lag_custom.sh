@@ -1,5 +1,8 @@
 #!/bin/sh
 
+## get version settings
+source ~/dotfiles/.appversions
+
 ## BASE PATHS
 HOME="/Users/greenla"
 
@@ -8,8 +11,8 @@ MY_DOCS="$HOME/Documents"
 MY_APPS="$HOME/Applications"
 
 ## JAVA PATHS
-JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
-JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk$v_JRE.jdk/Contents/Home"
+JDK_HOME="/Library/Java/JavaVirtualMachines/jdk$v_JDK.jdk/Contents/Home"
 #JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 #JDK_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home"
 JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
@@ -32,23 +35,23 @@ EC2_HOME="$MY_HOME/ec2"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
 EC2_URL="http://ec2.amazonaws.com"
 FLEX_SDK="$MY_HOME/flexsdk"
-GOROOT="$BREW_HOME/Cellar/go/1.3"
+GOROOT="$BREW_HOME/Cellar/go/$v_GO"
 GOPATH="$HOME/go"
-GRADLE_HOME="$BREW_HOME/Cellar/gradle/2.0"
+GRADLE_HOME="$BREW_HOME/Cellar/gradle/$v_GRADLE"
 GRAILS_HOME="$BREW_HOME/opt/grails/libexec"
 GROOVY_HOME="$BREW_HOME/opt/groovy/libexec"
 HEROKU_HOME="$BREW_HOME/heroku/"
 JETTY_HOME="$MY_HOME/jetty"
-JRUBY_HOME="$BREW_HOME/Cellar/jruby/1.7.13"
-JYTHON_HOME="$BREW_HOME/Cellar/jython/2.5.3/libexec"
+JRUBY_HOME="$BREW_HOME/Cellar/jruby/$v_JRUBY"
+JYTHON_HOME="$BREW_HOME/Cellar/jython/$v_JYTHON/libexec"
 M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
 MYSQL_HOME="$BREW_HOME/Cellar/mysql"
-MONGODB_HOME="$BREW_HOME/Cellar/mongodb/2.6.3"
-NGINX_HOME="$BREW_HOME/Cellar/nginx/1.6.1"
+MONGODB_HOME="$BREW_HOME/Cellar/mongodb/$v_MONGODB"
+NGINX_HOME="$BREW_HOME/Cellar/nginx/$v_NGINKX"
 PHANTOMJS="$HOME/.local/bin/phantomjs"
 PYTHON_HOME="/System/Library/Frameworks/Python.framework/Versions/Current"
-RUBY_HOME="$HOME/.rvm/rubies/ruby-1.9.2-p320/bin/ruby"
+RUBY_HOME="$HOME/.rvm/rubies/ruby-$v_RUBY/bin/ruby"
 #RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p484"
 SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
 WEBMIN_HOME="$MY_HOME/webmin"
@@ -154,9 +157,6 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-
-## VEEWEE Virtual Machine Builder
-alias veewee='bundle exec veewee'
 
 ## FF X => FIND FILE NAMED X
 alias ff="find . -name \!:1 -print"     
