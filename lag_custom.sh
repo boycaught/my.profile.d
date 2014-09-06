@@ -173,7 +173,6 @@ alias veewee="bundle exec veewee"
 ### Shit from Paul Irish (Google webdev guru, who got it from someone else...LOLz!)
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
-# for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 # for file in ~/dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
 for file in ~/dotfiles/.{bash_prompt,aliases,extras}; do
 	[ -r "$file" ] && source "$file"
@@ -196,6 +195,6 @@ export LANG="en_US"
 # some additional edits based on the Messiah box.
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
+# v_XXX files are application [v]ersion files, added to the ~/dotfiles/.extras file
 
 #EOF
