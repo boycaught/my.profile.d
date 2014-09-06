@@ -195,6 +195,6 @@ export LANG="en_US"
 # some additional edits based on the Messiah box.
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-# v_XXX files are application [v]ersion files, added to the ~/dotfiles/.extras file
+# v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
