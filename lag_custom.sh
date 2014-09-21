@@ -71,7 +71,7 @@ JYTHONPATH="$JYTHON_HOME:$JYTHON_HOME/bin:$JYTHON_HOME/Lib"
 
 PYTHONPATH="$PYTHON_HOME/bin"
 
-PATH="~/.local/bin:\
+PATH="$HOME/.local/bin:\
 ~/.meteor:\
 /usr/local/bin:\
 /usr/bin:\
