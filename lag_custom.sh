@@ -198,5 +198,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 9/21/2014
-#v.9.21.2014
+#LastUpdated: 10/12/2014
+#v.10.12.2014
