@@ -40,6 +40,7 @@ CLASSPATH="$CLASSPATH"
 PYTHONPATH="$PYTHON_HOME/bin"
 
 PATH="/usr/local/bin:\
+~/.meteor:\
 /usr/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
@@ -129,5 +130,5 @@ export LANG="en_US"
 
 
 #EOF
-#Updated 10/18/2014
+#Updated 10/18/2014b
 
