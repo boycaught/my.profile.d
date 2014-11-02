@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2014.10.26
+## updated to v_2014.11.2
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
