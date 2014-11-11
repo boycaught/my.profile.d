@@ -31,6 +31,7 @@ CATALINA_HOME="$MY_HOME/catalina"
 CF_HOME="$HOME/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
 COREUTILS="$BREW_HOME/opt/coreutils/libexec/gnubin"
+DROPBOX_HOME="$HOME/Dropbox/code/app"
 EC2_CERT="$EC2_HOME/x509_certificate.pem"
 EC2_HOME="$MY_HOME/ec2"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
@@ -43,6 +44,7 @@ GRAILS_HOME="$BREW_HOME/opt/grails/libexec"
 GROOVY_HOME="$BREW_HOME/opt/groovy/libexec"
 HEROKU_HOME="$BREW_HOME/heroku/"
 JETTY_HOME="$MY_HOME/jetty"
+JENKINS_HOME="$HOME/Dropbox/code/app/jenkins"
 JRUBY_HOME="$BREW_HOME/Cellar/jruby/$v_JRUBY"
 JYTHON_HOME="$BREW_HOME/Cellar/jython/$v_JYTHON/libexec"
 M2_HOME="$MY_HOME/maven"
@@ -117,6 +119,7 @@ export CATALINA_HOME
 export CF_HOME
 export CF_ROOT
 export CLASSPATH
+export DROPBOX_HOME
 export EC2_HOME
 export FLEX_SDK
 export GOROOT
@@ -128,6 +131,7 @@ export HEROKU_HOME
 export JAVA_HOME
 export JAVA_OPTS
 export JDK_HOME
+export JENKINS_HOME
 export JETTY_HOME
 export JRUBY_HOME
 export JYTHON_HOME
@@ -200,4 +204,4 @@ export LANG="en_US"
 
 #EOF
 #LastUpdated: 11/2/2014
-#v.11.2.2014
+#v.11.10.2014
