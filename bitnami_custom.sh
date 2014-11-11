@@ -40,6 +40,7 @@ CLASSPATH="$CLASSPATH"
 PYTHONPATH="$PYTHON_HOME/bin"
 
 PATH="/usr/local/bin:\
+~/.meteor:\
 /usr/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
@@ -130,3 +131,5 @@ export LANG="en_US"
 
 #Custom startup_scripts for UNIX-based cloud systems - 7/14/2014
 #EOF
+#Updated 11/10/2014a
+
