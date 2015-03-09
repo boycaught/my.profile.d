@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2015.02.19
+## updated to v_2015.03.08
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -32,8 +32,8 @@ CF_HOME="$HOME/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
 COREUTILS="$BREW_HOME/opt/coreutils/libexec/gnubin"
 DROPBOX_HOME="$HOME/Dropbox/code/app"
-EC2_CERT="$EC2_HOME/x509_certificate.pem"
 EC2_HOME="$MY_HOME/ec2"
+EC2_CERT="$EC2_HOME/x509_certificate.pem"
 EC2_PRIVATE_KEY="$EC2_HOME/private_key.pem"
 EC2_URL="http://ec2.amazonaws.com"
 FLEX_SDK="$MY_HOME/flexsdk"
@@ -203,5 +203,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 2/19/2015
-#v2015.02.19
+#LastUpdated: 3/8/2015
+#v2015.03.08
