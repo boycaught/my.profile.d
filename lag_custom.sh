@@ -5,7 +5,7 @@
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
-HOME="/Users/greenla"
+HOME="/Users/$USER"
 
 MY_HOME="$HOME/usr/local"
 MY_DOCS="$HOME/Documents"
