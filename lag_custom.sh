@@ -156,7 +156,7 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -lag --color | more'
+alias ll='ls -lag --color'
 alias px='ps Aue'
 alias dx='du -k | more'
 alias py='python manage.py'
