@@ -92,7 +92,6 @@ $COREUTILS:\
 $EC2_HOME/bin:\
 $FLEX_SDK/bin:\
 $GOROOT/bin:\
-$GOPATH/bin:\
 $GRADLE_HOME/bin:\
 $GRAILS_HOME/bin:\
 $GROOVY_HOME/bin:\
@@ -123,7 +122,6 @@ export DROPBOX_HOME
 export EC2_HOME
 export FLEX_SDK
 export GOROOT
-export GOPATH
 export GRADLE_HOME
 export GRAILS_HOME
 export GROOVY_HOME
