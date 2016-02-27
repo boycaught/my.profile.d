@@ -154,7 +154,7 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -lag --color | more'
+alias ll='ls -lag --color'
 alias px='ps Aue | more'
 alias dx='du -k | more'
 alias py='python manage.py'
@@ -202,5 +202,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 1/17/2016
-#v2016.01.17
+#LastUpdated: 2/27/2016
+#v2016.02.27
