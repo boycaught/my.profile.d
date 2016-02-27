@@ -154,8 +154,8 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -lag --color'
-alias px='ps Aue'
+alias ll='ls -lag --color | more'
+alias px='ps Aue | more'
 alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
