@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.03.13
+## updated to v_2016.03.22
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -202,5 +202,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 3/13/2016
-#v2016.03.13
+#LastUpdated: 3/22/2016
+#v2016.03.22
