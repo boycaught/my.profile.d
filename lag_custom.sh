@@ -160,7 +160,7 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-alias update='source ~/.updates'
+alias updates='source ~/.updates'
 
 ## FF X => FIND FILE NAMED X
 alias ff="find . -name \!:1 -print"     
