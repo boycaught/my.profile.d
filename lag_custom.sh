@@ -56,7 +56,7 @@ PHANTOMJS="$HOME/.local/bin/phantomjs"
 PYTHON_HOME="/System/Library/Frameworks/Python.framework/Versions/Current"
 RUBY_HOME="$HOME/.rvm/rubies/ruby-$v_RUBY/bin/ruby"
 #RUBY_HOME="$BREW_HOME/Cellar/ruby193/1.9.3-p484"
-SUBLIMETEXT="$MY_APPS/Sublime Text 2.app/Contents/SharedSupport"
+SUBLIMETEXT="/Applications/Sublime Text 2.app/Contents/SharedSupport"
 WEBMIN_HOME="$MY_HOME/webmin"
 VISUALVM="$MY_HOME/visualvm"
 YUICOMPRESSOR="$MY_HOME/yuicompressor-2.4.7/compress.jar"
@@ -202,5 +202,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 5/3/2016
-#v2016.05.03
+#LastUpdated: 5/17/2016
+#v2016.05.17
