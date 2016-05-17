@@ -10,7 +10,7 @@ BREW_HOME="/usr/local"
 
 MY_HOME="$HOME/usr/local"
 MY_DOCS="$HOME/Documents"
-MY_APPS="$HOME/Applications"
+MY_APPS="/Applications"
 
 ## JAVA PATHS
 JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk$v_JRE.jdk/Contents/Home"
@@ -28,7 +28,7 @@ ANDROID_HOME="$MY_HOME/android-sdk-macosx"
 ANT_HOME="$MY_HOME/ant"
 AWS_CREDENTIALS_FILE="$MY_HOME/aws/aws-credentials"
 CATALINA_HOME="$BREW_HOME/Cellar/tomcat/$v_TOMCAT/libexec"
-CF_HOME="$HOME/Applications/ColdFusion10/cfusion"
+CF_HOME="/Applications/ColdFusion10/cfusion"
 CF_ROOT="$CF_HOME/wwwroot/WEB-INF"
 COREUTILS="$BREW_HOME/opt/coreutils/libexec/gnubin"
 DROPBOX_HOME="$HOME/Dropbox/code/app"
