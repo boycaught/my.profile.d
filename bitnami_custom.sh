@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## BASE PATHS
-HOME="/home/bitnami"
+HOME="/home/$USER"
 
 MY_HOME="$HOME/usr/local"
 MY_DOCS="/opt/bitnami"
@@ -100,7 +100,7 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -lag | more'
+alias ll='ls -lag --color | more'
 alias px='ps -aux | more'
 alias dx='du -k | more'
 alias py='python manage.py'
