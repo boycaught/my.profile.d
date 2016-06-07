@@ -13,8 +13,6 @@ JDK_HOME=""
 JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 
 ## CUSTOM PATHS
-ACTIVEMQ_HOME="$MY_HOME/activemq"
-ADOBE_AIR_SDK="$MY_HOME/adobeairsdk"
 ANDROID_HOME=""
 ANT_HOME="$MY_HOME/ant"
 CATALINA_HOME="$MY_HOME/catalina"
@@ -45,8 +43,6 @@ PATH="/usr/local/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
 /opt/subversion/bin:\
-$ACTIVEMQ_HOME/bin:\
-$ADOBE_AIR_SDK/bin:\
 $ANDROID_HOME/bin:\
 $ANT_HOME/bin:\
 $CATALINA_HOME/bin:\
@@ -66,8 +62,6 @@ $RUBY_HOME/bin:\
 $WEBMIN_HOME:\
 $PATH"
 
-export ACTIVEMQ_HOME
-export ADOBE_AIR_SDK
 export ANDROID_HOME
 export ANT_HOME
 export CATALINA_HOME
