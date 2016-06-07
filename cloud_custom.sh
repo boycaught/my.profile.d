@@ -110,7 +110,7 @@ alias line="sed -n '\''\!:1 p'\'' \!:2"
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
 # init z   https://github.com/rupa/z
-. $HOME/z/z.sh
+#. $HOME/z/z.sh
 
 # init rvm
 # source $HOME/.rvm/scripts/rvm
