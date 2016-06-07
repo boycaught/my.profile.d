@@ -14,15 +14,15 @@ JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 
 ## CUSTOM PATHS
 ANDROID_HOME=""
-ANT_HOME="$MY_HOME/ant"
-CATALINA_HOME="$MY_HOME/catalina"
+ANT_HOME="/usr/local/ant"
+CATALINA_HOME="/usr/local/catalina"
 CF_HOME=""
 CF_ROOT=""
-GOROOT="$HOME/go"
-GOPATH="$HOME/go"
-GRADLE_HOME="$MY_HOME/gradle"
-GRAILS_HOME="$MY_HOME/grails"
-GROOVY_HOME="$MY_HOME/groovy"
+GOROOT="/usr/local/go"
+GOPATH="/usr/local/go"
+GRADLE_HOME="/usr/local/gradle"
+GRAILS_HOME="/usr/local/grails"
+GROOVY_HOME="/usr/local/groovy"
 HEROKU_HOME="/usr/local/heroku/"
 JETTY_HOME=""
 JRUBY_HOME=""
@@ -30,7 +30,7 @@ MONGODB_HOME=""
 NGINX_HOME=""
 PYTHON_HOME=""
 RUBY_HOME=""
-WEBMIN_HOME="$MY_HOME/webmin"
+WEBMIN_HOME="/usr/local/webmin"
 BOGUS="A whole lot of who cloud?"
 
 CLASSPATH="$CLASSPATH"
@@ -109,19 +109,12 @@ alias line="sed -n '\''\!:1 p'\'' \!:2"
 ## HISTOGRAM WORDS
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
-# init z   https://github.com/rupa/z
-#. $HOME/z/z.sh
-
-# init rvm
-# source $HOME/.rvm/scripts/rvm
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
-
 
 #Custom startup_scripts for UNIX-based cloud systems - 6/6/2016
 #EOF
