@@ -116,10 +116,10 @@ alias line="sed -n '\''\!:1 p'\'' \!:2"
 alias wordcount='(cat \!* | tr -s '\''  .,;:?\!()[]"'\'' '\''\012'\'' | cat -n | tail -1 | awk '\''print $1'\'')' 
 
 # init z   https://github.com/rupa/z
-. ~/z/z.sh
+. $HOME/z/z.sh
 
 # init rvm
-# source ~/.rvm/scripts/rvm
+# source $HOME/.rvm/scripts/rvm
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
@@ -129,7 +129,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 
-#Custom startup_scripts for UNIX-based cloud systems - 7/14/2014
+#Custom startup_scripts for UNIX-based cloud systems - 6/6/2016
 #EOF
-#Updated 11/10/2014a
+#Updated 6/6/2016
 
