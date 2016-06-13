@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.06.03
+## updated to v_2016.06.13
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -154,8 +154,8 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -lag \--color'
-alias px='ps uxA'
+alias ll='ls -alg -color | more'
+alias px='ps uxa'
 alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
@@ -202,5 +202,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 6/3/2016
-#v2016.06.03
+#LastUpdated: 6/13/2016
+#v2016.06.13
