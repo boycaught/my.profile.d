@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.06.13
+## updated to v_2016.06.14
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -189,6 +189,9 @@ unset file
 # init rvm
 # source ~/.rvm/scripts/rvm
 
+# init dvm (docker version manager)
+. "$(brew --prefix dvm)/dvm.sh"
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
@@ -202,5 +205,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 6/13/2016
-#v2016.06.13
+#LastUpdated: 6/14/2016
+#v2016.06.14
