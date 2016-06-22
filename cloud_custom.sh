@@ -16,17 +16,12 @@ JAVA_OPTS="-Xms512m -Xmx2048m -Djava.awt.headless=true"
 ANDROID_HOME=""
 ANT_HOME="/usr/local/ant"
 CATALINA_HOME="/usr/local/catalina"
-CF_HOME=""
-CF_ROOT=""
 GOROOT="/usr/local/go"
 GOPATH="/usr/local/go"
-GRADLE_HOME="/usr/local/gradle"
-GRAILS_HOME="/usr/local/grails"
-GROOVY_HOME="/usr/local/groovy"
-HEROKU_HOME="/usr/local/heroku/"
 JETTY_HOME=""
 JRUBY_HOME=""
 MONGODB_HOME=""
+MYSQL_PATH=""
 NGINX_HOME=""
 PYTHON_HOME=""
 RUBY_HOME=""
@@ -46,16 +41,12 @@ PATH="/usr/local/bin:\
 $ANDROID_HOME/bin:\
 $ANT_HOME/bin:\
 $CATALINA_HOME/bin:\
-$CF_HOME/bin:\
 $GOROOT/bin:\
 $GOPATH/bin:\
-$GRADLE_HOME/bin:\
-$GRAILS_HOME/bin:\
-$GROOVY_HOME/bin:\
-$HEROKU_HOME/bin:\
 $JETTY_HOME/bin:\
 $JRUBY_HOME/bin:\
 $MONGODB_HOME/bin:\
+$MYSQL_PATH/bin:\
 $MY_HOME/bin:\
 $NGINX_HOME/sbin:\
 $RUBY_HOME/bin:\
@@ -65,14 +56,9 @@ $PATH"
 export ANDROID_HOME
 export ANT_HOME
 export CATALINA_HOME
-export CF_HOME
-export CF_ROOT
 export CLASSPATH
 export GOROOT
 export GOPATH
-export GRADLE_HOME
-export GRAILS_HOME
-export GROOVY_HOME
 export HEROKU_HOME
 export JAVA_HOME
 export JAVA_OPTS
@@ -81,6 +67,7 @@ export JETTY_HOME
 export JRUBY_HOME
 export JYTHONPATH
 export MONGODB_HOME
+export MYSQL_PATH
 export NGINX_HOME
 export PYTHON_HOME
 export PYTHONPATH
@@ -95,7 +82,7 @@ export PATH
 ## MY ALIASES
 alias cl='clear'
 alias ll='ls -lag --color | more'
-alias px='ps -aux | more'
+alias px='ps aue | more'
 alias dx='du -k | more'
 alias py='python manage.py'
 alias customize='source /etc/profile.d/cloud_custom.sh'
@@ -116,7 +103,7 @@ shopt -s nocaseglob
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-#Custom startup_scripts for UNIX-based cloud systems - 6/6/2016
-#EOF
-#Updated 6/6/2016
+#Custom startup_scripts for UNIX-based cloud systems - 6/22/2016
+#Updated 6/22/2016
 
+#EOF
