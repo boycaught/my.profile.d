@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.06.14
+## updated to v_2016.06.22
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -49,7 +49,7 @@ JRUBY_HOME="$BREW_HOME/Cellar/jruby/$v_JRUBY"
 JYTHON_HOME="$BREW_HOME/Cellar/jython/$v_JYTHON/libexec"
 M2_HOME="$MY_HOME/maven"
 MAVEN_OPTS="-Xms256m -Xmx512m"
-MYSQL_HOME="$BREW_HOME/Cellar/mysql"
+MYSQL_PATH="$BREW_HOME/Cellar/mariadb/$v_MARIADB"
 MONGODB_HOME="$BREW_HOME/Cellar/mongodb/$v_MONGODB"
 NGINX_HOME="$BREW_HOME/Cellar/nginx/$v_NGINX"
 PHANTOMJS="$HOME/.local/bin/phantomjs"
@@ -100,7 +100,7 @@ $JETTY_HOME/bin:\
 $JRUBY_HOME/bin:\
 $M2_HOME\bin:\
 $MONGODB_HOME/bin:\
-$MYSQL_HOME/bin:\
+$MYSQL_PATH/bin:\
 $MY_HOME/bin:\
 $NGINX_HOME/sbin:\
 $PHANTOMJS:\
@@ -137,7 +137,7 @@ export JYTHONPATH
 export M2_HOME
 export MAVEN_OPTS
 export MONGODB_HOME
-export MYSQL_HOME
+export MYSQL_PATH
 export NGINX_HOME
 export PHANTOMJS
 export PYTHON_HOME
@@ -205,5 +205,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 6/14/2016
-#v2016.06.14
+#LastUpdated: 6/22/2016
+#v2016.06.22
