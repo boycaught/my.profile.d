@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.06.22
+## updated to v_2016.07.12
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -160,7 +160,7 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-alias updates='source ~/.updates'
+alias getupdates='source ~/.updates'
 
 ## FF X => FIND FILE NAMED X
 alias ff="find . -name \!:1 -print"     
@@ -205,5 +205,5 @@ export LANG="en_US"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 6/22/2016
-#v2016.06.22
+#LastUpdated: 7/12/2016
+#v2016.07.12
