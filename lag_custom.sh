@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.07.12
+## updated to v_2016.07.28
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -199,11 +199,14 @@ shopt -s nocaseglob
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+# Prefer 'nano' shell editor
+export EDITOR="nano"
+
 # some additional edits based on the Messiah box.
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 7/12/2016
-#v2016.07.12
+#LastUpdated: 7/28/2016
+#v2016.07.28
