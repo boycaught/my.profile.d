@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2016.07.29
+## updated to v_2018.03.13
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -160,7 +160,7 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-alias getupdates='source ~/.updates --color=auto | tee getupdates.log'
+alias getupdates='source ~/.updates | tee getupdates.log --color=auto'
 alias freshbrew='source ~/.freshbrew'
 
 ## FF X => FIND FILE NAMED X
@@ -210,4 +210,4 @@ export EDITOR="nano"
 
 #EOF
 #LastUpdated: 3/13/2018
-#v2018.03.13
+#v2018.03.13c
