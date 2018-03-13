@@ -160,7 +160,7 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-alias getupdates='source ~/.updates'
+alias getupdates='source ~/.updates | tee getupdates.log'
 alias freshbrew='source ~/.freshbrew'
 
 ## FF X => FIND FILE NAMED X
@@ -209,5 +209,5 @@ export EDITOR="nano"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 7/29/2016
-#v2016.07.29
+#LastUpdated: 3/13/2018
+#v2018.03.13
