@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2018.03.13
+## updated to v_2018.03.14
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -160,7 +160,7 @@ alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
-alias getupdates='source ~/.updates | tee getupdates.log --color=auto'
+alias getupdates='source ~/.updates --color=auto | tee getupdates.log --color=auto'
 alias freshbrew='source ~/.freshbrew'
 
 ## FF X => FIND FILE NAMED X
@@ -209,5 +209,5 @@ export EDITOR="nano"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 3/13/2018
-#v2018.03.13c
+#LastUpdated: 3/154/2018
+#v2018.04.13
