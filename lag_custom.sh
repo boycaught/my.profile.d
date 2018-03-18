@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2018.03.14
+## updated to v_2018.03.17
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -209,5 +209,5 @@ export EDITOR="nano"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 3/154/2018
-#v2018.04.13
+#LastUpdated: 3/17/2018
+#v2018.03.17
