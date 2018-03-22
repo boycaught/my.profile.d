@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2018.03.20
+## updated to v_2018.03.21
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -154,7 +154,7 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -alg --color=auto | more'
+alias ll='ls -alg | more'
 alias px='ps uxa'
 alias dx='du -k | more'
 alias py='python manage.py'
@@ -209,5 +209,5 @@ export EDITOR="nano"
 # v_XXX files are application [v]ersion files, added to the ~/dotfiles/.appversions file
 
 #EOF
-#LastUpdated: 3/20/2018
-#v2018.03.20
+#LastUpdated: 3/21/2018
+#v2018.03.21
