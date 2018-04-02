@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2018.03.21
+## updated to v_2018.04.02
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -154,9 +154,9 @@ export PATH
 
 ## MY ALIASES
 alias cl='clear'
-alias ll='ls -alg | more'
-alias px='ps uxa'
-alias dx='du -k | more'
+alias ll='ls -alg'
+alias px='ps uxa | more --color=auto'
+alias dx='du -k | more --color=auto'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
