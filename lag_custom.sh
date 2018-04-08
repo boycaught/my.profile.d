@@ -148,7 +148,7 @@ export WEBMIN_HOME
 export YUICOMPRESSOR
 export BOGUS
 
-export CC="gcc-4.2"
+export CC="gcc-7.3"
 
 export PATH
 
