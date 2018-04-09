@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## get version settings
-## updated to v_2018.04.07
+## updated to v_2018.04.09
 source ~/dotfiles/.appversions
 
 ## BASE PATHS
@@ -191,7 +191,7 @@ unset file
 # source ~/.rvm/scripts/rvm
 
 # init dvm (docker version manager)
-. "$(brew --prefix dvm)/dvm.sh"
+# . "$(brew --prefix dvm)/dvm.sh"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
@@ -210,4 +210,4 @@ export EDITOR="nano"
 
 #EOF
 #LastUpdated: 4/7/2018
-#v2018.04.07
+#v2018.04.09
