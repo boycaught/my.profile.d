@@ -155,8 +155,8 @@ export PATH
 ## MY ALIASES
 alias cl='clear'
 alias ll='ls -alg'
-alias px='ps uxa | more --color=auto'
-alias dx='du -k | more --color=auto'
+alias px='ps uxa | more'
+alias dx='du -k | more'
 alias py='python manage.py'
 alias jy='jython manage.py'
 alias customize='source /etc/profile.d/lag_custom.sh'
