@@ -27,7 +27,7 @@ unset file
 # . "$(brew --prefix dvm)/dvm.sh"
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
+# shopt -s nocaseglob
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
